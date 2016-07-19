@@ -2,7 +2,7 @@
  * Created by jhan on 7/8/2016.
  */
 
-angular.module('polls',[])
+angular.module('polls',['pollServices'])
     .config(['$routeProvider', function($routeProvider) {
         $routeProvider
             .when('/polls',{ templateUrl: 'partials/list.html', controller: PollListCtrl })
